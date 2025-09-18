@@ -43,7 +43,7 @@ class ItemsPageState extends State<ItemsPage> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF3A0CA3), Color(0xFFF72585)],
+            colors: [Color(0xFF228B22), Color(0xFFD2B48C)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -57,10 +57,10 @@ class ItemsPageState extends State<ItemsPage> {
                   children: [
                     Text(
                       '🛍️ Thrift Store',
-                      style: GoogleFonts.poppins(
+                      style: GoogleFonts.robotoSerif(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                        color: Colors.pink,
                       ),
                     ),
                     const Spacer(),
@@ -192,9 +192,9 @@ class ItemsPageState extends State<ItemsPage> {
                                       const SizedBox(height: 6),
                                       Text(
                                         'Php ${item.price.toStringAsFixed(2)}',
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.roboto(
                                           fontSize: 14,
-                                          color: const Color(0xFF7209B7),
+                                          color: const Color(0xFFFF7F50),
                                         ),
                                       ),
                                       const SizedBox(height: 6),
@@ -202,9 +202,9 @@ class ItemsPageState extends State<ItemsPage> {
                                         'By ${item.uploadedBy}',
                                         maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
-                                        style: GoogleFonts.poppins(
+                                        style: GoogleFonts.roboto(
                                           fontSize: 12,
-                                          color: Colors.grey[600],
+                                          color: Colors.black26,
                                         ),
                                       ),
                                       const SizedBox(height: 8),
@@ -213,7 +213,7 @@ class ItemsPageState extends State<ItemsPage> {
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
                                             backgroundColor:
-                                            const Color(0xFFF72585),
+                                            const Color(0xFF008080),
                                             padding:
                                             const EdgeInsets.symmetric(
                                                 vertical: 10),
@@ -231,8 +231,8 @@ class ItemsPageState extends State<ItemsPage> {
                                           },
                                           child: Text(
                                             'Details',
-                                            style: GoogleFonts.poppins(
-                                                color: Colors.white),
+                                            style: GoogleFonts.roboto(
+                                                color: Colors.greenAccent),
                                           ),
                                         ),
                                       ),
@@ -253,12 +253,12 @@ class ItemsPageState extends State<ItemsPage> {
               Padding(
                 padding: const EdgeInsets.all(16),
                 child: FloatingActionButton.extended(
-                  backgroundColor: Colors.white,
-                  foregroundColor: const Color(0xFF3A0CA3),
+                  backgroundColor: Colors.blue,
+                  foregroundColor: const Color(0xFFFFDB58),
                   icon: const Icon(Icons.add),
                   label: Text(
                     'Add New',
-                    style: GoogleFonts.poppins(fontWeight: FontWeight.w600),
+                    style: GoogleFonts.roboto(fontWeight: FontWeight.w600),
                   ),
                   onPressed: () async {
                     await Navigator.pushNamed(context, '/add');

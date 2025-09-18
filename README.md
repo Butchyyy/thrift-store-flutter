@@ -4,12 +4,12 @@ A simple Flutter app for browsing and posting thrift store items. Users can sign
 
 ---
 
-## 🚀 Features
+## 🔑 Features
 
-- 📋 User Sign In/Sign Up
-- 🖼️ Add item with image, title, description, and contact info
-- 🛍️ View item listings and details
-- 💌 Contact seller via email
+- ✍🏼 User Sign In/Sign Up
+- 🕵🏼‍♂️ Add item with image, title, description, and contact info
+- 🩰 View item listings and details
+- ✏️Contact seller via email
 
 ---
 
